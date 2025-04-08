@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+   char a;
+    printf("enter th e value  of of a:");
+    scanf("%c",&a);
+    char b;
+    printf("enter th e value  of of b:");
+    scanf("%c",&b);
+    while(a<=b)
+    {
+        printf("%c",a);
+        a--;
+    }
+   return 0; 
+}
