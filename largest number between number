@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int num, largest_digit = 0, remainder;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Ensure num is positive
+    num = (num < 0) ? -num : num;
+
+    while (num > 0) {
+        remainder = num % 10;
+        if (remainder > largest_digit) {
+            largest_digit = remainder;
+        }
+        num /= 10;
+    }
+
+    printf("Largest digit: %d\n", largest_digit);
+
+    return 0;
